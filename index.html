@@ -6,31 +6,70 @@
     </head>
 
     <body>
-        <header class="container">
-            <div class="logo">
-                <img src="image/atelie.jpeg">
-                <div class="header-container">
-                    <ul class="header-menu">
+        <header>
+            <nav class="container-navigation">
+
+               <div class="header-container">
+
+                <div class="header-logo">
+                    <img src="images/atelie.jpeg">
+                </div>
+
+                <div class="header-search">
+                    <input type="search" name="search" id="search" placeholder="Digite sua busca a aqui" class="input-header-search" >
+                    <button type="submit" class="butto-search">
+                        <img src="images/search.png" width="27" height="28" class="img-search"/>
+                    </button>
+                </div>
+
+                <div class="header-whatsapp">
+                    <a>
+                        <img src="images/whatsapp.png" width="30" height="30" alt="WhatsApp" title="whatsapp">
+                        <div class="header-whatsapp-text">WhatsApp</div>
+                    </a>
+                </div>
+
+                <div class="header-login">
+                    <a>
+                        <span class="loginInfo">
+                            <img src="images/user.png" width="30" height="30" loading="lazy" alt="Login user">
+                        </span>
+                    </a>
+                    <span class="header-login-text">
+                        <var>Conta</var>
+                    </span>
+                 
+                        
+                    
+                </div>
+
+                <div class="header-cart">
+                    <a>
+                        <img src="images/cart.png" width="30" height="30" >
+                    </a>
+                </div>
+                </div>
+
+                <nav class="header-menu">
+                    <ul class="header-menu-itens">
                             <var>Home</var>
                         </li>
                         
                         <li>
                             <var>Flores</var>
                         </li>
-
+    
                         <li>
                             <var>Vasos</var>
                         </li>
-
+    
                         <li>
                             <var>Arranjos</var>
                         </li>
                     </ul>
-                </div> 
-             </div>
-                
-            </div>
-            
+                </nav>
+               </div>
+            </nav> 
         </header>
 
         <div class="container-destaques">
@@ -47,3 +86,4 @@
 
     </body>
 </html>
+

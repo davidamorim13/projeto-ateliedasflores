@@ -1,18 +1,144 @@
-.container{
-    border: 1px solid red;
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #f6f4f1;
+    color: #666;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
-.header-menu {
+.header-container{
+    background-color: #ffffff;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns:290px 1fr 70px 90px 90px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header-logo header-search header-whatsapp header-login header-cart "
+    "nav nav nav nav"
+    ;
+    align-items: center;
+}
+
+.header-logo{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  
+}
+
+.header-search{
+    display: flex;
+    grid-template-columns: 60% 70px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-whatsapp {
+    display: grid;
+    align-items: center;
+}
+
+.header-whatsapp a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 6px;
+}
+
+.header-whatsapp-text {
+    color: #212121;
+    font-size: .75rem;
+    position: relative;
+   
+}
+
+.header-login {
+    display: grid;
+    justify-items: center;
+}
+
+.loginInfo {
+    position: relative;
+    top: 5px;
+}
+
+.header-login-text {
+    color: #212121;
+    font-size: .75rem;
+    
+}
+
+
+img {
+    border: 0;
+}
+
+var {
+    font-style: normal;
+}
+
+.header-login {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.input-header-search{
+    width: auto;
+    height: 36px;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-right: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 1rem;
+    padding: 5px 5px 5px 20px;
+    background-color: #fff;
+}
+
+.butto-search{
+    width: 70px;
+    height: 48px;
+    border-top: 1px solid #dedede;
+    border-left: 0;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.header-menu-itens {
     list-style: none;
     border: 1px solid black;
     float: left;
     
-
 }
 
-.header-menu li {
+
+
+.header-menu-itens li {
     position: relative;
     float: left;
     border-right: 1px solid black;
-    gap: 10px;
+    
 }
